@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title> Faculty Web Development Hackathon</title>
+    </head>
+    <body>
+
+        <!---1. Semantic Structure: Header and Navigation-->
+        <header>
+            <h1> TechNova Hackathon 2026</h1>
+            <p> Code the Future: A One-Day Intensive Innovation Challenge</p>
+        </header>
+
+        <nav>
+            <a href = "#about"> About the Event</a>
+            <a href = "#schedule"> Event Schedule</a>
+            <a href = "#register"> Registration</a>
+        </nav>
+
+        <!---1. Semantic Structure: About Section-->
+        <!---4. Comments: Explaining about Section-->
+        <section id = "about">
+            <h2> About the Event</h2>
+
+            <article>
+                <h3> Keynote Speaker: Dr. Alan Walker</h3>
+                <p> Dr. Alan Walker will share insights on the future of artificial intelligence and suistainable software engineering practices in modern industries.</p>
+            </article>
+
+            <article>
+                <h3> Main Activity: Rapid Prototyping</h3>
+                <p> Teams will have 6 hours to build a working application prototype that solves a real-world community challenge using open-source data.</p>
+            </article>
+        </section>
+
+         <!-- 1. Semantic Structure & 2. Event Schedule Table Section -->
+            <!-- 4. Comments: Explaining the Schedule section -->
+            <section id = "schedule">
+                <h2>Event Schedule</h2>
+                
+                <table border = "1"                
+                <thead>
+                         <tr>
+                         <th>Time</th>
+                         <th>Activity</th>
+                         <th>Venue</th>
+                         <th>Person in Charge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Row 1 -->
+                        <tr>
+                            <td>08:00 AM - 09:00 AM</td>
+                            <td>Registration and Light Breakfast</td>
+                            <td>Main Lobby</td>
+                            <td>Mr. Ted</td>
+                        </tr>
+                        <!-- Row 2 -->
+                        <tr>
+                            <td>09:00 AM - 10:00 AM</td>
+                            <td>Opening Ceremony & Keynote</td>
+                            <td>Auditorium 1</td>
+                            <td>Dr. Alan Walker</td>
+                        </tr>
+                        <!-- Row 3: Demonstrating rowspan (Venue is the same for consecutive sessions) -->
+                        <tr>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Hackathon Coding Session 1</td>
+                            <td rowspan="2">Lab 3 & Lab 4</td>
+                            <td>Ms. Ash</td>
+                        </tr>
+                        <!-- Row 4 -->
+                        <tr>
+                            <td>12:00 PM - 13:30 PM</td>
+                            <td>Mentoring & Progress Review</td>
+                            <td>Dr. Alan Walker</td>
+                        </tr>
+                        <!-- Row 5: Demonstrating colspan (Lunch Break spans across 3 columns) -->
+                        <tr>
+                            <td>13:30 PM - 14:30 PM</td>
+                            <td colspan="3">Lunch Break</td>
+                        </tr>
+                        <!-- Row 6 -->
+                        <tr>
+                            <td>14:30 PM - 16:00 PM</td>
+                            <td>Networking Sessions</td>
+                            <td>Auditorium 1</td>
+                            <td>Prof. Nazifa</td>
+                        </tr>
+                        <!-- Row 7 -->
+                        <tr>
+                            <td>16:00 PM - 16:30 PM</td>
+                            <td>Tea Break</td>
+                        </tr>
+                        <!-- Row 8 -->
+                        <tr>
+                            <td>16:30 PM - 17:30 PM</td>
+                            <td>Final Pitch & Demos</td>
+                            <td>Dewan Sultan Mizan</td>
+                            <td>Prof. Laila</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
+            <!-- 1. Semantic Structure & 3. Registration Form Section -->
+            <!-- 4. Comments: Explaining the Registration Form section -->
+            <section id="register">
+                <h2>Registration Form</h2>
+                
+                <form action="register.html" method="post">
+                    <!-- Text Inputs with matching labels and input ids -->
+                    <p>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+
+                    </p>   
+
+                     <p>
+                        <label for="matricNumber">Matric Number:</label>
+                        <input type="text" id="matricNumber" name="matricNumber" required>
+                    </p>
+                                
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    
+                    <!-- Radio Buttons (Shared name attribute ensures only one can be selected) -->
+                    <p>
+                        <strong>Year of Study:</strong><br>
+                        <input type="radio" id="year1" name="yearOfStudy" value="Year 1">
+                        <label for="year1">Year 1</label><br>
+                                    
+                        <input type="radio" id="year2" name="yearOfStudy" value="Year 2">
+                        <label for="year2">Year 2</label><br>
+                                    
+                        <input type="radio" id="year3" name="yearOfStudy" value="Year 3">
+                        <label for="year3">Year 3</label><br>
+                                    
+                        <input type="radio" id="year4" name="yearOfStudy" value="Year 4">
+                        <label for="year4">Year 4</label>
+                    </p>
+                    
+                    <!-- Checkboxes (At least 3 choices) -->
+                    <p>
+                        <strong>Select the sessions you want to join (Select all that apply):</strong><br>
+                        <input type="checkbox" id="session1" name="sessions" value="Keynote">
+                        <label for="session1">Opening Ceremony & Keynote</label><br>
+                                    
+                        <input type="checkbox" id="session2" name="sessions" value="Coding">
+                        <label for="session2">Hackathon Coding & Mentoring</label><br>
+                                    
+                        <input type="checkbox" id="session3" name="sessions" value="Pitch">
+                        <label for="session3">Final Pitch & Demos</label>
+                    </p>
+                    
+                    <!-- Drop-down List (At least 4 options) -->
+                    <p>
+                        <label for="programme">Programme / Faculty:</label>
+                        <select id="programme" name="programme">
+                            <option value="CS">Software Engineering</option>
+                            <option value="DS">Data Science</option>
+                            <option value="CN">Computer Networking</option>
+                            <option value="MC">Mobile Computing</option>
+                        </select>
+                    </p>
+                    
+                    <!-- Submit Button -->
+                    <p>
+                            <input type="submit" value="Submit Registration">
+                    </p>
+                    </form>
+                    </section>
+                    
+                    <!-- 1. Semantic Structure: Footer -->
+                    <footer>
+                    <p>Organised by the Faculty Computer Science Committee &copy; 2026 TechNova.</p>
+                    </footer>
+                        
+    </body>
+</html>
