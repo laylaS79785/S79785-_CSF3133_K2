@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head><title>My Profile</title></head>
+    <body>
+          <!-- HEADER -->
+        <header><h1>Personal Profile</h1></header>
+          <!-- NAV -->
+        <nav><a href="#profile">Profile</a> | <a href="#form">Form</a></nav><br>
+          <!-- SECTION 1 -->
+        <section id="profile">
+            <!-- TABLE -->
+            <article>
+                <table border="1"> 
+                    <tr>
+                        <th>Name</th> <th>Birth Date</th> <th>Occupation</th>
+                    </tr>
+                    <tr>
+                        <td>Salwani Arifin</td> <td>19/01/2005</td> <td>Pschology Officer</td>
+                    </tr>
+                    <tr>
+                        <td>Ash Gwen Chana</td> <td>13/03/2001</td> <td>Data Analyst</td>
+                    </tr>
+                    <tr>
+                        <td>Siti Ielyana</td> <td>24/12/2002</td> <td>Primary's Teacher</td>
+                    </tr>
+                </table> 
+            </article>    
+        </section>
+          <!-- SECTION 2 -->
+        <!-- FORMS -->
+         <section id="form">
+            <article>
+                <h2> USER INFORMATION </h2>
+                <P> This form is used to collect information from users </P>
+            </article>
+            <form action="submit_form.php" method="post">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname"><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <input type="submit" value="Submit"><br><br>
+                <label>Select your hobbies:</label><br>
+                <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+                <label for="hobby1">Reading</label>
+
+                <input type="checkbox" id="hobby2" name="hobby2" value="Gardening">
+                <label for="hobby2">Gardening</label><br><br>
+
+                <input type="checkbox" id="hobby3" name="hobby3" value="Photography">
+                <label for="hobby3">Photography</label><br><br>
+
+                <input type="checkbox" id="hobby4" name="hobby4" value="Cooking/Baking">
+                <label for="hobby4">Cooking/Baking</label><br><br>
+
+                <input type="checkbox" id="hobby5" name="hobby5" value="Singing">
+                <label for="hobby5">Singing/Dancing</label><br><br>
+
+                <input type="checkbox" id="hobby6" name="hobby6" value="Hiking">
+                <label for="hobby6">Hiking</label><br><br>
+
+                <label for="country">Choose a country:</label><br>
+                <select id="country" name="country">
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="philippine">Philippine</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="europe">Europe</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="south korea">South Korea</option>
+                    
+                </select>
+            </form>
+         </section>
+          <!-- FOOTER -->
+           <footer>
+            <p>Copyright @ 2026 My Profile Page</p>
+           </footer>
+    </body>
+</html>
