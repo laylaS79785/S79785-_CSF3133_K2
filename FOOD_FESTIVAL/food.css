@@ -1,0 +1,192 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F0;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+/* Header with Background Image */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    min-height: 100px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    margin: 2px 0 0;
+    font-size: 12px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2C2C2C;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Active Navigation Link */
+nav ul li a.active {
+    background-color: #E67E22;
+    color: white;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+section p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Food Table */
+#foodTable {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Table Borders and Padding */
+#foodTable th,
+#foodTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Table Header */
+#foodTable th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Alternating Row Colours */
+#foodTable tr:nth-child(even) {
+    background-color: #FDEBD0;
+}
+
+#foodTable tr:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+/* Table Hover Effect */
+#foodTable tbody tr:hover {
+    background-color: #EFE6D8;
+    cursor: pointer;
+}
+
+/* Price Alignment */
+#foodTable td.price {
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #EFE6D8;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+
+    header {
+        padding: 25px 10px;
+        min-height: 100px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 10px;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        padding: 12px 14px;
+        font-size: 11px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    #foodTable {
+        font-size: 10px;
+    }
+
+    #foodTable th,
+    #foodTable td {
+        padding: 6px 4px;
+    }
+}
+
