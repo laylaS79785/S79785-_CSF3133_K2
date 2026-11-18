@@ -1,0 +1,113 @@
+
+/* 1. General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* 2. Header styling */
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* 3. Heading font styling */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* 4. Navigation menu styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 5. Navigation list items */
+nav li {
+    float: left;
+}
+
+/* 6. Navigation links */
+nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 7. Navigation hover effect */
+nav li a:hover {
+    background-color: #111;
+}
+
+/* 8. Active Home link */
+nav li a.active {
+    background-color: #04AA6D;
+}
+
+/* 9. Main content styling */
+main {
+    padding: 20px;
+}
+
+/* 10. Table styling */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* 11. Table cells and headers */
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* 12. Table header styling */
+#products th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* 13. Alternate grey rows */
+#products tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* 14. Table hover effect */
+#products tr:hover {
+    background-color: #ddd;
+}
+
+/* 15. Align price column to the right */
+#products .price {
+    text-align: right;
+}
+
+/* 16. Footer styling */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
